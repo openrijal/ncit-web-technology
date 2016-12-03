@@ -34,7 +34,7 @@
     <div class="container">
  
         <div class="navbar-header">
-            <a class="navbar-brand" href="index.php" title='List all News'>Latest News</a>
+            <a class="navbar-brand" href="index.php" title='List all News'>Home</a>
         </div>
  
     </div>
@@ -43,7 +43,7 @@
 <div class="container">
 
 	<div class="page-header">
-    	<h1 class="h2">all news / <a class="btn btn-default" href="addnew.php"> <span class="glyphicon glyphicon-plus"></span> &nbsp; add news </a></h1> 
+    	<h1 class="h2"><a class="btn btn-default" href="addnew.php"> <span class="glyphicon glyphicon-plus"></span> &nbsp; add news </a></h1> 
     </div>
     
 <br />
@@ -60,11 +60,9 @@
 		{
 			extract($row);
 			?>
-			<div class="col-xs-3">
-				<p class="page-header"><?php echo $title; ?></p>
-				<p><?php echo $description; ?></p>
-			</div>       
-			<hr />
+			<h2 class="page-header"><?php echo $title; ?></h2>
+			<p><?php echo $description; ?></p>
+			
 			<?php
 		}
 	}

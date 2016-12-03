@@ -55,7 +55,7 @@
     <div class="container">
  
         <div class="navbar-header">
-            <a class="navbar-brand" href="index.php" title='List all News'>Latest News</a>
+            <a class="navbar-brand" href="index.php" title='List all News'>Home</a>
         </div>
  
     </div>

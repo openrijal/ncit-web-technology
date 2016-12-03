@@ -2,8 +2,8 @@
 
 	$DB_HOST = 'localhost';
 	$DB_USER = 'root';
-	$DB_PASS = '';
-	$DB_NAME = 'testdb';
+	$DB_PASS = 'root';
+	$DB_NAME = 'yoyodb';
 	
 	try{
 		$DB_con = new PDO("mysql:host={$DB_HOST};dbname={$DB_NAME}",$DB_USER,$DB_PASS);

@@ -27,17 +27,17 @@ SET time_zone = "+00:00";
 --
 
 CREATE TABLE IF NOT EXISTS `tbl_news` (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
-  `title` varchar(20) NOT NULL,
-  `description` varchar(50) NOT NULL,
+  `id` int(11) NOT NULL PRIMARY KEY AUTO_INCREMENT,
+  `title` varchar(255) NOT NULL,
+  `description` text NOT NULL,
   `published_date` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP,
   `last_updated_date`  datetime ON UPDATE CURRENT_TIMESTAMP
-  PRIMARY KEY (`id`)
-) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=51 ;
+);
 
 --
 -- Dumping data for table `tbl_news`
 --
+
 
 INSERT INTO `tbl_news` (`title`, `description`) VALUES
 ('hello world', 'we are learning hello world'),
